@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="teht1">
+        <h1>Tehtävä 1</h1>
+        <p>Anna kolme lukua, ja paina järjestä luvut nappia. Ohjelma laittaa ne järjestykseen.</p>
+        <label for="1num1">Anna 1. luku</label> <input type="number" id="1num1"> <br> <br>
+        <label for="1num2">Anna 2. luku</label> <input type="number" id="1num2"> <br> <br>
+        <label for="1num3">Anna 3. luku</label> <input type="number" id="1num3"> <br> <br>
+        <button type="button" onclick="järjestäluvut()">Järjestä luvut</button>
+        <p id="loppu1"></p> <br>
+    </div>
+
+    <div class="teht2">
+        <h1>Tehtävä 2</h1>
+        <p>Anna 5 lukua, ja ohjelma etsii niistä suurimman.</p>
+        <label for="2num1">Anna 1. luku</label> <input type="number" id="2num1"> <br> <br>
+        <label for="2num2">Anna 2. luku</label> <input type="number" id="2num2"> <br> <br>
+        <label for="2num3">Anna 3. luku</label> <input type="number" id="2num3"> <br> <br>
+        <label for="2num4">Anna 4. luku</label> <input type="number" id="2num4"> <br> <br>
+        <label for="2num5">Anna 5. luku</label> <input type="number" id="2num5"> <br> <br>
+        <button type="button" onclick="suurinluku()">Suurin luku</button>
+        <p id="loppu2"></p> <br>
+    </div>
+    
+    <div class="teht3">
+        <h1>Tehtävä 3</h1>
+        <p>Anna joku luku, ja ohjelma kertoo, onko antamasi luku parillinen vai pariton.</p>
+        <label for="3num1">Anna luku</label> <input type="number" id="3num1"> <br> <br>
+        <button type="button" onclick="paritonvaiparillinen()">Pariton vai parillinen</button>
+        <p id="loppu3"></p> <br>
+    </div>
+    
+    <div class="teht4">
+        <h1>Tehtävä 4</h1>
+        <p>Anna oma ikä, ja ohjelma tarkistaa mitä ajoneuvoa saat ajaa.</p>
+        <label for="4num1">Anna ikä</label> <input type="number" id="4num1"> <br> <br>
+        <button type="button" onclick="ajoneuvosi()">Ajoneuvosi</button>
+        <p id="loppu4"></p> <br>
+    </div>
+    
+    <div class="teht5">
+        <h1>Tehtävä 5</h1>
+        <p>Valitse kieli, ja käännä "Hei maailma!" -teksti.</p>
+        <label for="selection">Valitse kieli</label>
+        <select name="selection" id="selection">
+            <option value="Hallo Welt!">Saksa</option>
+            <option value="Hello world!">Egnlanti</option>
+            <option value="Hej världen!">Ruotsi</option>
+        </select> <br> <br>
+        <button type="button" onclick="käännä()">Käännä</button>
+        <p id="loppu5"></p> <br>
+    </div>
+</body>
+</html>
